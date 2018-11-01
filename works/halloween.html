@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+
+body {
+  background-color: orange;
+}
+
+.container,
+.ear, .face, .inner, .eye, .snout, .drip, .hat{
+  position: absolute;
+}
+
+.container {
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 200px;
+  height: 100px;
+}
+
+.ear {
+  top: -5px;
+  left: -2px;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background: #FF6600;
+}
+
+.ear.right {
+  transform: translateX(120px);
+}
+
+.face {
+  width: 200px;
+  height: 190px;
+  border-radius: 100%;
+  background: #FF6600;
+}
+
+.inner {
+  top: 8px;
+  left: 10px;
+  width: 50px;
+  height: 50px;
+  background: #C57726;
+  border-radius: 1000%;
+}
+
+.inner.right {
+  left: 16px;
+}
+
+.eye {
+  top: 80px;
+  left: 36px;
+ width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 31px solid #FFFF66;
+}
+
+.eye.right {
+  transform: translateX(80px);
+}
+
+.snout {
+  top: 110px;
+  left: 77px;
+  width: 50px;
+  height: 45px;
+  background: #C57726;
+  border-radius: 100%;
+}
+
+.nose {
+  position: absolute;
+  top: 4px;
+  left: 16px;
+  width: 15px;
+  height: 7px;
+  background: #333;
+  border-radius: 100%;
+}
+
+.bridge {
+  position: absolute;
+  top: 10px;
+  left: 23px;
+  width: 2px;
+  height: 13px;
+  background: #333;
+}
+
+.mouth {
+  position: absolute;
+  width: 13px;
+  height: 5px;
+  border-radius: 0% 0% 100% 100%;
+  border-bottom: 2px solid;
+  top: 17px;
+  left: 11px;
+}
+.mouth2 {
+  position: absolute;
+  width: 13px;
+  height: 5px;
+  border-radius: 0% 0% 100% 100%;
+  border-bottom: 2px solid;
+  top: 17px;
+  left: 23px;
+
+}
+.drip {
+  width: 4px;
+  height: 10px;
+  background: #C33149;
+  top: 23.5px;
+  left: 17px;
+  border-radius: 0 0 100% 100%;
+}
+.hat{
+	position: absolute;
+	top: -170px;
+  left: 25px;
+	width: 0;
+	height: 0;
+	border-left: 28px solid transparent;
+	border-right: 28px solid transparent;
+	border-bottom: 60px solid black;
+
+}
+.hatbot{
+	position: absolute;
+	top: -120px;
+  left: 5px;
+	height: 30px;
+  width: 100px;
+  background-color: black;
+  border-radius: 50%;
+
+}
+.teeth{
+	position:absolute;
+	top: 23px;
+  left: 14px;
+	 width: 0;
+	height: 0;
+	border-left: 2px solid transparent;
+	border-right: 2px solid transparent;
+	border-top: 5px solid white;
+}
+.teeth2{
+	position:absolute;
+	top: 23px;
+  left: 29px;
+	 width: 0;
+	height: 0;
+	border-left: 2px solid transparent;
+	border-right: 2px solid transparent;
+	border-top: 5px solid white;
+
+}
+.rileft{
+	position:absolute;
+	top: 60px;
+   left: -15px;
+	width: 0;
+	height: 0;
+	border-top: 20px solid transparent;
+	border-left: 40px solid black;
+	border-bottom: 20px solid transparent;
+}
+.riright{
+	position:absolute;
+	top: 60px;
+   left: 25px;
+	width: 0;
+	height: 0;
+	border-top: 20px solid transparent;
+	border-right: 40px solid black;
+	border-bottom: 20px solid transparent;
+}
+.hatri{
+	position: absolute;
+	top: -133px;
+  left: 29px;
+	border-bottom: 15px solid ;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	height: 0;
+	width: 36px;
+	color:#FFFF66;
+
+}
+.eyes:before,
+.eyes:after {
+  animation: eyes-blink 2.5s infinite;
+}
+
+@keyframes eyes-blink {
+  0% { transform: scaleY(1); }
+  95% { transform: scaleY(1); }
+  100% { transform: scaleY(0); }
+
+</style>
+</head>
+<body>
+	<div class="container">
+  <div class="ear">
+    <div class="inner"> </div>
+  </div>
+  <div class="ear right">
+    <div class="inner right"></div>
+  </div>
+  <div class="face">
+    <div class="eye"> </div>
+    <div class="eye right"> </div>
+    <div class="snout">
+      <div class="nose"> </div>
+      <div class="bridge"></div>
+      <div class="mouth"> </div>
+       <div class="mouth2"> </div>
+        <div class="drip"></div>
+        <div class="hat"></div>
+         <div class="hatbot"></div> 
+         <div class="teeth"></div>
+         <div class="teeth2"></div>
+         <div class="rileft"></div>
+         <div class="riright"></div>
+         <div class="hatri"></div> 
+
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
