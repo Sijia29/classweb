@@ -8,14 +8,19 @@
 
 	body{
 		background-color: #FF8800;
+	}
+	.container{
 		margin-left: 50px;
 		margin-right:50px;
-
+		text-align: justify;
+	}
+	.container1{
+		text-align:center;
 	}
 
 	h1{
 		font-family: 'Fjalla One', sans-serif;
-		font-size: 80px;
+		font-size: 70px;
 	}
 	.red{
 		color: #CE0000;
@@ -25,7 +30,7 @@
 	}
 	.img1{
 		float:left;
-		width:400px;
+		width:450px;
 		height:300px;
 	}
 	p{
@@ -51,16 +56,22 @@
 		background-position: center;
 	}
 	.img3{
+		background-image: url("blaster.jpg");
 		float:right;
 		width:450px;
 		height:300px;
+		background-size: cover;
 	}
 	.img4{
 		position: center;
-		min-width:10px;
-		min-height:10px;
-		width: 800px;
-		height: 500px;
+        width:100%;
+	}
+	.img5{
+		max-width:100%;
+		float:right;
+	}
+	.pair1{
+		text-align: left;
 	}
 
 	
@@ -71,7 +82,8 @@
 
 </head>
 <body>	
-	<img src="ikafly.png"></img>
+	<img src="ikafly.png" class="img5"></img>
+	<div class="container">
 	<div class="container1">
 	<h1 class="red">Splatoon 2<h1>
 		<h1 class="white">Review</h1>
@@ -82,19 +94,14 @@
 
         <p>There’s also a brand-new array of special weapon powerups, many of which work well with proper coordination to break stalemates. The protective Ink Armor shields your entire team from harm, while the Tenta Missiles can lock onto and fire a salvo of ink strikes on multiple enemies.</p>
 	</div>		
-	</div>
 	
 
 	<p class="p1">There’s also a brand-new array of special weapon powerups, many of which work well with proper coordination to break stalemates. The protective Ink Armor shields your entire team from harm, while the Tenta Missiles can lock onto and fire a salvo of ink strikes on multiple enemies.</p>
-	<div class="pair1">
 		<img src="onngatou.jpg" class="img1"></img>
 		<p>Besides Turf Wars, Ranked an League Battles are where more precise and objective-based modes await. There’s a king-of-the-hill-inspired Splat Zone, a tug-of-war style payload mode called Tower Control, and a spin on capture the flag where you carry a powerful but movement-impeding weapon to the enemy base called Rainmaker. Splat Zone is the most basic of the trio, and I </p>
-	</div>
 <p>prefer the modes where teams fight over a moving target like the mobile tower in Tower Control, and the Rainmaker weapon that was constantly changing hands. Even when both teams are working well together and locked in a tug-of-war for control, matches move at a quick pace, which prevents drawn-out stalemates. Even though Ranked Battles rotate between modes every few hours, I’m glad each mode has their own ranking system so I can see which modes I’m best at and where I need to improve.</p>
-    <div class="pair2">
-    	<img src="blaster.jpg" class="img3"></img>
+    	<div class="img3"></div>
     	<p>Going hand in hand with Splatoon 2’s wealth of weapons is a set of gear that provides both style and bonuses in combat, with the added twist of over 20 random secondary abilities that unlock after you’ve battled with them equipped enough times. These range from practical effects, like increasing ink recovery rates, to highly specialized abilities that can track the enemy who last splatted you or players you’ve recently hit. Obtaining new gear is a smoother process than in the first game,</p>
-    </div>
     <p>too – you can now order any gear you’ve seen on other people in-game using currency earned from battle, though the abilities attached to yours might not be the same due to random generation. Paying to scrub unwanted extra traits to make room for new ones leaves chunks of those abilities behind to apply to other gear, letting you mix and match from your inventory, or you can try your luck at unlocking different bonuses to replace the old ones that better align with your playstyle. This is a good way get value out of gear you earned but don’t plan to wear: by scrubbing enough ammo-conserving bonuses from gear I wasn’t using, I was then able to apply that trait to my favorite jersey (for a hefty price). Offering the chance to craft the perfect gear for your playstyle to give you a better edge in the more competitive Ranked Battles has kept me more invested than I was in the first Splatoon.</p>
 
 
@@ -107,7 +114,7 @@
 
 
 
-
+</div>
 </body>
 
 </html>
