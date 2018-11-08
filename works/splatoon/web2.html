@@ -29,13 +29,13 @@
 		color: white;
 	}
 	.img1{
-		float:left;
-		width:450px;
-		height:300px;
+		position: center;
+        width:100%;
 	}
 	p{
 		color: white;
 		font-size:20px;
+		font-family: 'Acme', sans-serif;
 
 	}
 	.b2{
@@ -49,6 +49,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.65;
+    width:100%;
 	}
 	.p1{
 		
@@ -56,29 +57,85 @@
 		background-position: center;
 	}
 	.img3{
-		background-image: url("blaster.jpg");
-		float:right;
-		width:450px;
-		height:300px;
-		background-size: cover;
+		position: center;
+        width:100%;
 	}
 	.img4{
 		position: center;
         width:100%;
 	}
 	.img5{
-		max-width:100%;
-		float:right;
+		position: center;
+        width:100%;
 	}
 	.pair1{
 		text-align: left;
 	}
 
+	.caption2 {
+  position: absolute;
+  left: 0;
+  top: 4500px;
+  width: 100%;
+  text-align: center;
+  color: black;
+
+}
+
+.caption2 span.title2 {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+    .img6{
+	background-image: url("salmon.jpg");
+    height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.65;
+    width:100%;
+	}
+
+	.caption3 {
+  position: absolute;
+  left: 0;
+  top: 5800px;
+  width: 100%;
+  text-align: center;
+  color: black;
+
+}
+
+.caption3 span.title3 {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+h3{
+	color: white;
+}
+
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
 	
 
 </style>
 
 <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Chakra+Petch" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
 
 </head>
 <body>	
@@ -87,6 +144,7 @@
 	<div class="container1">
 	<h1 class="red">Splatoon 2<h1>
 		<h1 class="white">Review</h1>
+		<h3>REVIEWED ON SWITCH / 24 JUL 2017 2:41 PM PDT</h3>
 		<img src="spla.jpg" class="img4"></img>
 		<p >BY BRENDAN GRAEBER It feels as if the paint had just begun to dry on Splatoon after its release on the Wii U in 2015 when Nintendo applied a fresh coat and relaunched it with Splatoon 2 on the Switch. That may be why this sequel feels less like a whole new game than a new version of the first one that rolls up the best post-launch updates to the colorful and adorably non-violent team-based shooter and adds some new toys. Of course, considring the first game is a lot of fun, that’s not necessarily a bad thing, especially if you missed it for lack of a Wii U. And despite some questionable choices that can leave you trapped in matchmaking purgatory, the addition of a standout and clever take on a co-op horde mode provides some seriously addicting fun that has me coming back for more.
 
@@ -100,7 +158,7 @@
 		<img src="onngatou.jpg" class="img1"></img>
 		<p>Besides Turf Wars, Ranked an League Battles are where more precise and objective-based modes await. There’s a king-of-the-hill-inspired Splat Zone, a tug-of-war style payload mode called Tower Control, and a spin on capture the flag where you carry a powerful but movement-impeding weapon to the enemy base called Rainmaker. Splat Zone is the most basic of the trio, and I </p>
 <p>prefer the modes where teams fight over a moving target like the mobile tower in Tower Control, and the Rainmaker weapon that was constantly changing hands. Even when both teams are working well together and locked in a tug-of-war for control, matches move at a quick pace, which prevents drawn-out stalemates. Even though Ranked Battles rotate between modes every few hours, I’m glad each mode has their own ranking system so I can see which modes I’m best at and where I need to improve.</p>
-    	<div class="img3"></div>
+    	<img src="blaster.jpg"></img>
     	<p>Going hand in hand with Splatoon 2’s wealth of weapons is a set of gear that provides both style and bonuses in combat, with the added twist of over 20 random secondary abilities that unlock after you’ve battled with them equipped enough times. These range from practical effects, like increasing ink recovery rates, to highly specialized abilities that can track the enemy who last splatted you or players you’ve recently hit. Obtaining new gear is a smoother process than in the first game,</p>
     <p>too – you can now order any gear you’ve seen on other people in-game using currency earned from battle, though the abilities attached to yours might not be the same due to random generation. Paying to scrub unwanted extra traits to make room for new ones leaves chunks of those abilities behind to apply to other gear, letting you mix and match from your inventory, or you can try your luck at unlocking different bonuses to replace the old ones that better align with your playstyle. This is a good way get value out of gear you earned but don’t plan to wear: by scrubbing enough ammo-conserving bonuses from gear I wasn’t using, I was then able to apply that trait to my favorite jersey (for a hefty price). Offering the chance to craft the perfect gear for your playstyle to give you a better edge in the more competitive Ranked Battles has kept me more invested than I was in the first Splatoon.</p>
 
@@ -108,8 +166,21 @@
     <div class="img2">
   <div class="caption2">
     <span class="title2">Aquatic Ambience</span>
-    <p>With a world this colorful and fun, it’s great to see how much better people and places look on the Switch. Characters like the weapons dealer Sheldon and clothing merchant Jelfonzo look better than ever with more detailed models and textures, and the various forms of street art and graffiti scattered around the maps pop. The ink itself shimmers and glints with shiny flecks. Despite it all, Splatoon 2 never failed to maintain a smooth 60 frames per second in battle even with ink flying in all directions in a fully populated eight-player match. In handheld mode, things look great, and the option to set sensitivity for both modes of play helped immensely when switching between handheld and docked mode. I actually ended up swapping between motion and non-motion controls with surprising ease (though not being able to use the control stick to look up and down with motion and controls does take getting used to every time).</p>
   </div>
+</div>
+
+<div style="color: #777;background-color:orange;text-align:center;padding:50px 80px;text-align: justify;">
+  <p>With a world this colorful and fun, it’s great to see how much better people and places look on the Switch. Characters like the weapons dealer Sheldon and clothing merchant Jelfonzo look better than ever with more detailed models and textures, and the various forms of street art and graffiti scattered around the maps pop. The ink itself shimmers and glints with shiny flecks. Despite it all, Splatoon 2 never failed to maintain a smooth 60 frames per second in battle even with ink flying in all directions in a fully populated eight-player match. In handheld mode, things look great, and the option to set sensitivity for both modes of play helped immensely when switching between handheld and docked mode. I actually ended up swapping between motion and non-motion controls with surprising ease (though not being able to use the control stick to look up and down with motion and controls does take getting used to every time).</p>
+</div>
+
+<div class="img6">
+  <div class="caption3">
+    <span class="title3">Cooperative Calamari</span>
+  </div>
+</div>
+
+<div style="color: #777;background-color:orange;text-align:center;padding:50px 80px;text-align: justify;">
+  <p>Where Splatoon 2’s single-player campaign gently guides you through Octoling enemies, the new Salmon Run mode is an excellent cooperative foil. As hilarious as it is addicting, this mode puts you and up to three other players up against three timed waves of relentless enemies while collecting a quota of golden eggs from boss creatures and depositing them in a basket. Unlike other horde modes, Salmon Run deftly uses Splatoon’s ink and territory mechanics to ensure you’re not only splatting fish but also struggling to maintain control of the ground as enemies try to stifle your movement. The Boss Salmonids you face are some of the most memorable enemies I’ve seen in a horde mode since Left 4 Dead, wielding trash as makeshift weapons and armor and shooting beams of ink from atop a tower of pots and pans. Their distinct looks help you assess threats quickly, which is essential because your team must neutralize them before being overwhelmed.</p>
 </div>
 
 
