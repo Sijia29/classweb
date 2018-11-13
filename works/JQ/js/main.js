@@ -25,7 +25,7 @@ function demoFunction() {
     })
 }
  
-// can ignore this if you want
+
 function vPosH1() {
     var h1H = $('.header').height();
     var wH = $(window).height();
