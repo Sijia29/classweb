@@ -8,8 +8,8 @@ function numberGuess() {
 	$('#submit').click(function() {
 		var guess = $('input').val();
 		console.log(guess);
-		if (number == guess) {
-			$('h1').text(number + ' is right!, snowy!');
+		if (number == guess || number == 1) {
+			$('h1').text(number + ' is right! snowy!');
 			$('input').val('');
 		} else if (number < guess) {
 			$('h1').text(guess + ' is too late');
@@ -18,11 +18,7 @@ function numberGuess() {
 			$('h1').text(guess + ' is too early');
 			$('input').val('');
 		}
-		 else if (number = 1) {
-			$('h1').text(guess + ' snowy');
-			$('input').val('')
-		}
-
+		
 		
     })
 }
