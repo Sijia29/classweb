@@ -1,6 +1,7 @@
 body {
 	margin: 0;
-	color: black;
+	color: white;
+	background-color: skyblue;
 }
 #container {
 	width: 50vw;
@@ -15,7 +16,6 @@ h1 {
 	font-size: 48px;
 	text-align: center;
 	font-family: sans-serif;
-	/*text-transform: uppercase;*/
 	letter-spacing: 2px;
 }
 input {
@@ -28,8 +28,8 @@ input {
 }
 .button {
 	width: 150px;
-	background-color: black;
-	color: white;
+	background-color: white;
+	color: black;
 	border-radius: 5px;
 	padding: 10px 15px;
 	margin: 50px auto;

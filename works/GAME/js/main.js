@@ -1,39 +1,28 @@
-$(document).ready(function() {
-    // run function on initial page load
-	colorGuess();
+ $(document).ready(function() {
+	numberGuess();
 });
 
-function colorGuess() {
-	var colorArray = ["../img/Hermes.png", "../img/burberry.png", "../img/apple.png", "../img/mini.jpg"];
-	var color = Math.floor(Math.random() * colorArray.length);
-	var stripped = colorArray[color].toLowerCase();
-	console.log(colorArray[color]);
-	console.log(stripped);
-	$('body').css('background-color', colorArray[color]);
+function numberGuess() {
+	var number = Math.floor(Math.random() * 12);
+	console.log(number);
 	$('#submit').click(function() {
 		var guess = $('input').val();
 		console.log(guess);
-		if (guess == stripped || guess == colorArray[color]) {
-			$('h1').text(guess + ' is right!');
+		if (number == guess) {
+			$('h1').text(number + ' is right!, snowy!');
 			$('input').val('');
-			$('.button p').text('Play Again?');
-			$('#submit').click(function() {
-				location.reload(true);
-			});
-		} else  {
-			$('h1').text(guess + ' is wrong');
+		} else if (number < guess) {
+			$('h1').text(guess + ' is too late');
+			$('input').val('')
+		} else {
+			$('h1').text(guess + ' is too early');
 			$('input').val('');
-			$('.button p').text('Play Again?');
-			$('#submit').click(function() {
-				location.reload(true);
-			});
 		}
-	})
+		 else if (number = 1) {
+			$('h1').text(guess + ' snowy');
+			$('input').val('')
+		}
+
+		
+    })
 }
-
-"../img/Hermes.png", "../img/burberry.png", "../img/apple.png", "../img/mini.jpg"
-
-
-
-
-
