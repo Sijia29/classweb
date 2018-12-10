@@ -21,10 +21,10 @@ function demoFunction() {
         $('.jqClick').toggleClass('border');
     })
     $('.jqHover').hover(function() {
-        $("numberFive").toggleClass('redBG');
+        $("numberOne").toggleClass('redBG');
     })
 }
- 
+
 
 function vPosH1() {
     var h1H = $('.header').height();
