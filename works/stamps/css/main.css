@@ -46,10 +46,16 @@ body{
 .detail{
 	font-family: 'Muli', sans-serif;
 	font-size:30px;
+	text-align: justify;
+	margin-left: 50px;
+	margin-right:50px;
 }
 .title{
 	font-family: 'Muli', sans-serif;
 	font-size: 50px;
+	text-align: center;
+	margin-left: 50px;
+	margin-right:50px;
 }
 
 h1{
@@ -94,7 +100,7 @@ li a:hover {
 }
 
 .click{
-		font-size: 20px;
+		font-size: 30px;
 		font-weight: bold;
 		font-transform: uppercase;
 		font-family: sans-serif;
@@ -106,24 +112,24 @@ li a:hover {
 		font-family: 'Gamja Flower', cursive;
 
 }
-    a:hover{
+    a.click:hover{
    	border-bottom: 5px dotted white;
    	color: white;
    }
 
-.img1{
+img{
 	margin-top: 50px;
 	width: 100%;
 }
 
 .img2{
-
+	width: 100%;
 }
 
 .about{
-	text-align: justify;
 	font-size:35px;
 	font-family: 'Bree Serif', serif;
+	text-align: justify;
 	margin-left: 50px;
 	margin-right:50px;
 
